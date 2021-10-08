@@ -288,15 +288,3 @@ export TZ
 PATH=$PATH:~
 export PATH
 EOF
-
-. ~/.bash_profile
-
-# https://developer.aliyun.com/article/767677
-wget -N --no-check-certificate "https://gist.github.com/zeruns/a0ec603f20d1b86de6a774a8ba27588f/raw/4f9957ae23f5efb2bb7c57a198ae2cffebfb1c56/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
-
-
-
-
-
-# systemctl stop v2ray;systemctl disable v2ray;rm -fr /var/log/v2ray/access.log /var/log/v2ray/error.log;systemctl enable /etc/systemd/system/v2ray.service;systemctl start v2ray;systemctl stop nginx;systemctl disable nginx;rm -fr /www/nginx/logs/*;systemctl enable /www/nginx/nginx.service;systemctl start nginx;systemctl stop frps;systemctl disable frps;rm -fr /etc/frp/frps.log;systemctl enable /etc/frp/frps.service;systemctl start frps;
-
